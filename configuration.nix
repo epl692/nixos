@@ -8,13 +8,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./local.nix
       /etc/scripts/epl692.nix
-      /etc/scripts/systems/nixie.nix
     ];
-
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
 
   # Configure network proxy if necessary
