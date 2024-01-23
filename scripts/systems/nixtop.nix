@@ -5,9 +5,9 @@
 
     boot.loader = {
       grub = {
-      enabled = true;
+      enable = true;
       useOSProber = true;
-       device = "/dev/sda";
+      devices = ["/dev/sda"];
       };
     };
   }
