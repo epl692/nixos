@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/bash
 
 sudo cp /etc/nixos/configuration.nix /etc/nixos/configuration.old
 sudo rm -r /etc/nixos-scripts/

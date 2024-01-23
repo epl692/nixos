@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      /etc/nixos-scripts/epl692.nix
     ];
 
   # Bootloader.
@@ -84,7 +85,6 @@
     description = "Eric Lynema";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      firefox
       kate
     #  thunderbird
     ];
@@ -98,9 +98,6 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    neovim
-    git
-    brave
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
