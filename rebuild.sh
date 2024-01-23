@@ -12,7 +12,11 @@ sudo cp ./configuration.nix /etc/nixos/
 if ! test -f /etc/nixos/local.nix; then
   echo Creating Local Config
   sudo cp ./local.nix /etc/nixos/
+  touch ./unsafe.flag
   echo Please edit local nix file and rerun.
-else
+  echo unsafe.flag created. Please delete before rerun.
+fi
+
+if ! test -f ./unsafe.flag; then
   sudo nixos-rebuild switch
 fi
