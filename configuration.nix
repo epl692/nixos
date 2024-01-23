@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      /etc/nixos-scripts/epl692.nix
+      /etc/scripts/epl692.nix
     ];
 
   # Bootloader.
