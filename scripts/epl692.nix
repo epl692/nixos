@@ -9,7 +9,7 @@
     wget
     curl
     git
-
+    htop
   ];
   
 programs.neovim = {
