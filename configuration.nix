@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./local.nix
-      /etc/scripts/epl692.nix
+      ./epl692.nix
     ];
 
 

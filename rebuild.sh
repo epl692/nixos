@@ -8,10 +8,10 @@
 #sudo mkdir /etc/scripts/
 #sudo cp -r ./scripts/ /etc/
 #sudo cp ./configuration.nix /etc/nixos/
-
-if ! test -f ./local/local.nix; then
+sudo cp ./scripts/epl692.nix /etc/nixos/epl692.nix
+if ! test -f /etc/nixos/local.nix; then
   echo Creating Local Config
-  sudo cp ./local.nix ./local/
+  sudo cp ./local.nix /etc/nixos/
   touch ./unsafe.flag
   echo Please edit local nix file and rerun.
   echo unsafe.flag created. Please delete before rerun.
