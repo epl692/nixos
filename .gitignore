@@ -1,3 +1,4 @@
 local/
 unsafe.flag
 prepped.flag
+hardware-configuration.nix
