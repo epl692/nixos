@@ -6,5 +6,4 @@
       #./grub.nix
       ./efi.nix
     ];
-    networking.hostName = "nixie"; # Define your hostname.
 }
