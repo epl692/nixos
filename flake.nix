@@ -9,5 +9,9 @@
       system = "x86_64-linux";
       modules = [ ./configuration.nix ./scripts/systems/nixie.nix ];
     };
+      nixosConfigurations.nix-vm = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [ ./configuration.nix ./scripts/systems/nix-vm.nix ];
+    };
   };
 }
