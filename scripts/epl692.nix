@@ -10,6 +10,11 @@
       curl
       git
       htop
+
+      #Funny
+      toilet
+      lolcat
+      fortune
     ];
   
   programs.neovim = {
