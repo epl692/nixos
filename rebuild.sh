@@ -12,6 +12,8 @@ sudo cp ./scripts/epl692.nix /etc/nixos/epl692.nix
 if ! test -f /etc/nixos/local.nix; then
   echo Creating Local Config
   sudo cp ./local.nix /etc/nixos/
+  sudo cp ./efi.nix /etc/nixos/
+  sudo cp ./grub.nix /etc/nixos/
   touch ./unsafe.flag
   echo Please edit local nix file and rerun.
   echo unsafe.flag created. Please delete before rerun.
