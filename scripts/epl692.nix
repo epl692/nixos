@@ -34,7 +34,4 @@
    options = "--delete-older-than 7d";
   };
 
-  # Enable Flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
 }

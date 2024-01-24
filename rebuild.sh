@@ -8,7 +8,7 @@
 #sudo mkdir /etc/scripts/
 #sudo cp -r ./scripts/ /etc/
 #sudo cp ./configuration.nix /etc/nixos/
-sudo cp ./scripts/epl692.nix /etc/nixos/epl692.nix
+#sudo cp ./scripts/epl692.nix /etc/nixos/epl692.nix
 if ! test -f /etc/nixos/local.nix; then
   echo Creating Local Config
   sudo cp ./local.nix /etc/nixos/

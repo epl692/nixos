@@ -11,11 +11,11 @@
       nixosConfigurations = {
         nixie = lib.nixosSystem {
           system = "x86_64-linux";
-          modules = [ ./configuration.nix ./scripts/nixie.nix ];
+          modules = [ ./configuration.nix ./scripts/epl692.nix ./scripts/nixie.nix ];
       };
       nixtop = lib.nixosSystem {
           system = "x86_64-linux";
-          modules = [ ./configuration.nix ./scripts/nixtop.nix ];
+          modules = [ ./configuration.nix ./scripts/epl692.nix ./scripts/nixtop.nix ];
       };
     };
   };
