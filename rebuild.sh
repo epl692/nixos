@@ -1,5 +1,6 @@
 #!/run/current-system/sw/bin/bash
-sudo cp ./configuration.nix /etc/nixos/configuration.nix
+sudo cp ./configuration.nix /etc/nixos/system-configuration.nix
+sudo cp ./prep.nix /etc/nixos/configuration.nix
 sudo cp /etc/nixos/hardware-configuration.nix ./hardware-configuration.nix
 if ! test -f /etc/nixos/local.nix; then
   echo Creating Local Config
