@@ -10,13 +10,15 @@
       curl
       git
       htop
+      neofetch
 
       #Funny
       toilet
       lolcat
       cowsay
       fortune
-    ];
+      
+      ];
   
   programs.neovim = {
     enable = true;
