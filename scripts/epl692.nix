@@ -14,6 +14,7 @@
       #Funny
       toilet
       lolcat
+      cowsay
       fortune
     ];
   
