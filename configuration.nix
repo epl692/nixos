@@ -5,11 +5,11 @@
 { config, pkgs, ... }:
 
 {
-#  imports =
-#    [ # Include the results of the hardware scan.
+  imports =
+    [ # Include the results of the hardware scan.
 #      ./hardware-configuration.nix
 #      ./local.nix
-#    ];
+    ];
 
 
   # Configure network proxy if necessary
@@ -18,7 +18,10 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
+  # Home Manager
+  	home-manager.useGlobalPkgs = true;
+  	home-manager.useUserPackages = true;
+  	home-manager.users.gandalf = import ./home.nix; 
   # Set your time zone.
   time.timeZone = "America/Detroit";
 

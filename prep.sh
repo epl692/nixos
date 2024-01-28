@@ -11,6 +11,8 @@ echo "Copy Scripts..."
 sudo cp -r ./scripts /etc/nixos
 echo "Copy Flake..."
 sudo cp ./flake.nix /etc/nixos
+echo "Copy Home-Manager Config..."
+sudo cp ./home.nix /etc/nixos
 if ! test -f /etc/nixos/local.nix; then
   echo Creating Local Config...
   sudo cp ./local.nix /etc/nixos/
