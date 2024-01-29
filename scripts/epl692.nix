@@ -4,6 +4,7 @@
       # Desktop applications
       brave
       threema-desktop
+      yakuake
 
       # System Utilies
       wget
