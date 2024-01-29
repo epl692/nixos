@@ -10,14 +10,19 @@
       curl
       git
       htop
+      neofetch
 
       #Funny
       toilet
       lolcat
       cowsay
       fortune
-    ];
+      
+      ];
   
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
+
   programs.neovim = {
     enable = true;
     viAlias = true;
