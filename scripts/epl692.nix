@@ -12,6 +12,7 @@
       git
       htop
       neofetch
+      bc
 
       #Funny
       toilet
