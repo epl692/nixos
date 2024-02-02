@@ -14,6 +14,9 @@
       neofetch
       bc
 
+      #Stuff
+      x3270
+
       #Funny
       toilet
       lolcat
