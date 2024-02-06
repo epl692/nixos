@@ -97,6 +97,7 @@
 
     ssh = {
       enable = true;
+      forwardAgent = true;
       matchBlocks.nixie = {
 	compression = true;
 	hostname = "epl692.duckdns.org";
