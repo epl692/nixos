@@ -108,7 +108,7 @@
 	port = 1701;
       };
        matchBlocks.sdf = {
-        host = "*.sdf.org";
+        host = "sdf.org *.sdf.org";
 	user = "epl692";
        };
     };
