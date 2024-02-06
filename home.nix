@@ -95,8 +95,16 @@
 
     };
 
-    fish = {
+        fish = {
       enable = true;
     };
+  };
+  services = {
+	gpg-agent = {
+	      enable = true;
+	      enableFishIntegration = true;
+	      enableScDaemon = true;
+	      enableSshSupport = true;
+	    };
   };
 }
