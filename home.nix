@@ -107,6 +107,10 @@
 	hostname = "epl692.duckdns.org";
 	port = 1701;
       };
+       matchBlocks.sdf = {
+        host = "*.sdf.org";
+	user = "epl692";
+       };
     };
 
     fish = {
