@@ -25,7 +25,7 @@
       
       ];
 
-  virtualisation.podman.enable = true;
+  virtualisation.docker.enable = true;
 
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;

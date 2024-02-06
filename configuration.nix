@@ -80,7 +80,7 @@
   users.users.gandalf = {
     isNormalUser = true;
     description = "Eric Lynema";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       kate
     #  thunderbird
