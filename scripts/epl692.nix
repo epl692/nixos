@@ -23,11 +23,15 @@
       cowsay
       fortune
       
+      #Yubikey
+      yubikey-agent
+      yubikey-manager
+      yubikey-personalization
       ];
 
   virtualisation.docker.enable = true;
   networking.firewall.checkReversePath = "loose"; 
-
+  hardware.gpgSmartcards.enable = true;
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
 
