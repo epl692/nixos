@@ -26,6 +26,7 @@
       ];
 
   virtualisation.docker.enable = true;
+  networking.firewall.checkReversePath = "loose"; 
 
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
