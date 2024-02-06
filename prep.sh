@@ -14,6 +14,6 @@ sudo cp ./home.nix /etc/nixos
 sudo cp ./efi.nix /etc/nixos/
 sudo cp ./grub.nix /etc/nixos/
 
-if ! test -f ./armed.flag; then
+if test -f ./armed.flag; then
   sudo nixos-rebuild switch --flake /etc/nixos/
 fi
