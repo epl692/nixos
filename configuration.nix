@@ -86,6 +86,7 @@
       kate
     #  thunderbird
     ];
+    openssh.authorizedKeys.keys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1FPRnUFoo6Ygk5MYQrcxvGmxeZBzPo9QDdCnlnt1EZIP642ZJjoZZwEVK4eikEmj8nHjpVL6Y+6mYWCzrokhpKlFSracgpo5Tm1I3FR6XncPTr3/Rzi1dNIsZxa+MNugEg6zehjj9qOJofLARkxai2o/k6pi9q8V7DaoioiVbFYCauTahZiVMtFI9DzL+z2hz4pUpWlYSmoBzI0Weyy92vp2qNx/jRSg03bjoDhv/KpdQayr/8GOKl5vD+HMToh/dMCrZhNjIR4j4Ss3VwnmiwTgdOyzGuv30R5kAyv1QezBezGWEmsRjlGBA6FSIwDvntkVBMcKERwQEYdVwIni9 cardno:24_745_089" ];
   };
 
   # Allow unfree packages
