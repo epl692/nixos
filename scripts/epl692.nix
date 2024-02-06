@@ -5,6 +5,7 @@
       brave
       threema-desktop
       yakuake
+      localsend
 
       # System Utilies
       wget
