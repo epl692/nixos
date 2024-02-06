@@ -6,6 +6,7 @@
       threema-desktop
       yakuake
       localsend
+      element-desktop
 
       # System Utilies
       wget
