@@ -5,6 +5,11 @@ if test -d /etc/nixos/scripts; then
 	echo "Erase Scripts..."
 	sudo rm -r /etc/nixos/scripts/
 fi
+if ! test -d /opt/my-wallpaper/; then
+	mkdir /opt/my-wallpaper
+fi
+echo "Copy Wallpaper..."
+sudo cp -r ./wallpaper.jpg /opt/my-wallpaper/wallpaper.jpg
 echo "Copy Scripts..."
 sudo cp -r ./scripts /etc/nixos
 echo "Copy Flake..."

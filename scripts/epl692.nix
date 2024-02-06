@@ -4,9 +4,10 @@
       # Desktop applications
       brave
       threema-desktop
-      yakuake
       localsend
       element-desktop
+
+      gnome.adwaita-icon-theme
 
       # System Utilies
       wget

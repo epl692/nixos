@@ -69,8 +69,11 @@
   home.sessionVariables = {
     #EDITOR = "vim";
   };
+ home.pointerCursor.gtk.enable = true;
+ home.pointerCursor.name = "Vanilla-DMZ";
+ home.pointerCursor.package = pkgs.vanilla-dmz;
 
-  programs = {
+ programs = {
 
   git = {
     enable = true;
@@ -126,5 +129,10 @@
 	      enableScDaemon = true;
 	      enableSshSupport = true;
 	    };
+  };
+  dconf.settings = {
+      "org/gnome/desktop/background" = {
+      picture-uri = "file:///opt/my-wallpaper/wallpaper.jpg";
+      };
   };
 }

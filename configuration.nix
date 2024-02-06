@@ -44,8 +44,12 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+#  services.xserver.displayManager.sddm.enable = true;
+#  services.xserver.desktopManager.plasma5.enable = true;
+
+   services.xserver.displayManager.gdm.enable = true;
+   services.xserver.desktopManager.gnome.enable = true;
+
 
   # Configure keymap in X11
   services.xserver = {
@@ -82,7 +86,7 @@
     description = "Eric Lynema";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
-      kate
+#      kate
     #  thunderbird
     ];
     openssh.authorizedKeys.keys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1FPRnUFoo6Ygk5MYQrcxvGmxeZBzPo9QDdCnlnt1EZIP642ZJjoZZwEVK4eikEmj8nHjpVL6Y+6mYWCzrokhpKlFSracgpo5Tm1I3FR6XncPTr3/Rzi1dNIsZxa+MNugEg6zehjj9qOJofLARkxai2o/k6pi9q8V7DaoioiVbFYCauTahZiVMtFI9DzL+z2hz4pUpWlYSmoBzI0Weyy92vp2qNx/jRSg03bjoDhv/KpdQayr/8GOKl5vD+HMToh/dMCrZhNjIR4j4Ss3VwnmiwTgdOyzGuv30R5kAyv1QezBezGWEmsRjlGBA6FSIwDvntkVBMcKERwQEYdVwIni9 cardno:24_745_089" ];
@@ -96,8 +100,12 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
+    gnome.adwaita-icon-theme
     git
   ];
+ 
+  programs.dconf.enable = true;
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
