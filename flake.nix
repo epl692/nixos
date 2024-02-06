@@ -7,11 +7,6 @@
       	inputs.nixpkgs.follows = "nixpkgs";
       };
 
-      plasma-manager = {
-          url = "github:pjones/plasma-manager";
-          inputs.nixpkgs.follows = "nixpkgs";
-          inputs.home-manager.follows = "home-manager";
-      };
 	};
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 
   let
@@ -25,7 +20,6 @@
  in {
     specialArgs = {inherit inputs;};
 
-    # replace 'nixtop' with your hostname here.
     nixosConfigurations.nixtop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [ ./configuration.nix ./scripts/systems/nixtop.nix ./grub.nix inputs.home-manager.nixosModules.home-manager ];
