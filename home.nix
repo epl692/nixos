@@ -95,7 +95,21 @@
 
     };
 
-        fish = {
+    ssh = {
+      enable = true;
+      matchBlocks.nixie = {
+	compression = true;
+	hostname = "epl692.duckdns.org";
+	port = 1701;
+      };
+       matchBlocks.home = {
+	compression = true;
+	hostname = "epl692.duckdns.org";
+	port = 1701;
+      };
+    };
+
+    fish = {
       enable = true;
     };
   };
