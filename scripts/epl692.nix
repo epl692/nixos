@@ -32,6 +32,8 @@
 
   virtualisation.docker.enable = true;
   networking.firewall.checkReversePath = "loose"; 
+  networking.firewall.allowedTCPPorts = [ 53317 ];
+  networking.firewall.allowedUDPPorts = [  ];
   hardware.gpgSmartcards.enable = true;
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
