@@ -102,10 +102,11 @@
 	hostname = "epl692.duckdns.org";
 	port = 1701;
       };
-       matchBlocks.home = {
+       matchBlocks.rivendell = {
 	compression = true;
-	hostname = "epl692.duckdns.org";
-	port = 1701;
+	hostname = "172.16.36.231";
+	port = 22;
+	proxyJump = "nixie";
       };
        matchBlocks.sdf = {
         host = "sdf.org *.sdf.org";
