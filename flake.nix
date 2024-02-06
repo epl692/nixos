@@ -28,15 +28,15 @@
     # replace 'nixtop' with your hostname here.
     nixosConfigurations.nixtop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ ./configuration.nix ./scripts/systems/nixtop.nix inputs.home-manager.nixosModules.home-manager ];
+      modules = [ ./configuration.nix ./scripts/systems/nixtop.nix ./grub.nix inputs.home-manager.nixosModules.home-manager ];
     };
       nixosConfigurations.nixie = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ ./configuration.nix ./scripts/systems/nixie.nix inputs.home-manager.nixosModules.home-manager ];
+      modules = [ ./configuration.nix ./scripts/systems/nixie.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
     };
       nixosConfigurations.nix-vm = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ ./configuration.nix ./scripts/systems/nix-vm.nix inputs.home-manager.nixosModules.home-manager ];
+      modules = [ ./configuration.nix ./scripts/systems/nix-vm.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
     };
   };
 }
