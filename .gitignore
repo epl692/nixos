@@ -1,4 +1,2 @@
-local/
-unsafe.flag
-prepped.flag
-hardware-configuration.nix
+result/
+armed.flag
