@@ -1,4 +1,4 @@
-  { config, pkgs, ... }:
+  { config, pkgs, lib, ... }:
   {
     environment.systemPackages = with pkgs; [
       # Desktop applications
@@ -32,10 +32,17 @@
       yubikey-personalization
       ];
 
+<<<<<<< HEAD
   environment.shellInit = ''
     gpg-connect-agent /bye
     export SSH_AUTH_SOCK2=$(gpgconf --list-dirs agent-ssh-socket)
   '';
+=======
+#  environment.shellInit = ''
+#    gpg-connect-agent /bye
+#    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+#  '';
+>>>>>>> 2d762975395eca0ec7a7106cf6e39901c1d4fad2
 
   virtualisation.docker.enable = true;
   networking.firewall.checkReversePath = "loose"; 
@@ -61,6 +68,8 @@
     enable = true;
     enableSSHSupport = true;
   };
+  
+  services.gnome.gnome-keyring.enable = lib.mkForce false;
 
 
   # Auto Upgrade
