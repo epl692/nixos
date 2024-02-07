@@ -59,7 +59,18 @@
   };
   
   services.gnome.gnome-keyring.enable = lib.mkForce false;
+services.xserver.desktopManager.gnome = {
+  enable = true;
+    extraGSettingsOverridePackages = with pkgs; [ gnome.gnome-settings-daemon ];
+      extraGSettingsOverrides = ''
+    [org.gnome.desktop.session]
+        idle-delay=900
 
+    [org.gnome.settings-daemon.plugins.power]
+        sleep-inactive-ac-timeout=3600
+        sleep-inactive-ac-type='nothing'
+        '';
+        };
 
   # Auto Upgrade
   system.autoUpgrade = {
