@@ -32,11 +32,6 @@
       yubikey-personalization
       ];
 
-#  environment.shellInit = ''
-#    gpg-connect-agent /bye
-#    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-#  '';
-
   virtualisation.docker.enable = true;
   networking.firewall.checkReversePath = "loose"; 
   networking.firewall.allowedTCPPorts = [ 53317 ];
@@ -44,6 +39,10 @@
   hardware.gpgSmartcards.enable = true;
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
+  systemd.targets.sleep.enable = false;
+  systemd.targets.suspend.enable = false;
+  systemd.targets.hibernate.enable = false;
+  systemd.targets.hybrid-sleep.enable = false;
 
   programs.neovim = {
     enable = true;
