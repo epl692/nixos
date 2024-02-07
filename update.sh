@@ -10,6 +10,7 @@ if ! test -d /opt/my-wallpaper/; then
 fi
 echo "Copy Wallpaper..."
 sudo cp -r ./wallpaper.jpg /opt/my-wallpaper/wallpaper.jpg
+sudo cp -r ./wallpaper2.jpg /opt/my-wallpaper/wallpaper2.jpg
 echo "Copy Scripts..."
 sudo cp -r ./scripts /etc/nixos
 echo "Copy Flake..."

@@ -133,6 +133,7 @@
   dconf.settings = {
       "org/gnome/desktop/background" = {
       picture-uri = "file:///opt/my-wallpaper/wallpaper.jpg";
+      picture-uri-dark = "file:///opt/my-wallpaper/wallpaper2.jpg";
       };
     "org/gnome/shell" = {
       favorite-apps = [
