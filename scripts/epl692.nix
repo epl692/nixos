@@ -34,7 +34,7 @@
 
   environment.shellInit = ''
     gpg-connect-agent /bye
-    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+    export SSH_AUTH_SOCK2=$(gpgconf --list-dirs agent-ssh-socket)
   '';
 
   virtualisation.docker.enable = true;
@@ -44,6 +44,10 @@
   hardware.gpgSmartcards.enable = true;
   programs.fish.enable = true;
   users.defaultUserShell = pkgs.fish;
+  systemd.targets.sleep.enable = false;
+  systemd.targets.suspend.enable = false;
+  systemd.targets.hibernate.enable = false;
+  systemd.targets.hybrid-sleep.enable = false;
 
   programs.neovim = {
     enable = true;
