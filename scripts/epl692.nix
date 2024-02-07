@@ -32,6 +32,11 @@
       yubikey-personalization
       ];
 
+  environment.shellInit = ''
+    gpg-connect-agent /bye
+    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+  '';
+
   virtualisation.docker.enable = true;
   networking.firewall.checkReversePath = "loose"; 
   networking.firewall.allowedTCPPorts = [ 53317 ];
