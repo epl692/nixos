@@ -134,5 +134,14 @@
       "org/gnome/desktop/background" = {
       picture-uri = "file:///opt/my-wallpaper/wallpaper.jpg";
       };
+    "org/gnome/shell" = {
+      favorite-apps = [
+        "brave-browser.desktop"
+        "org.gnome.Console.desktop"
+        "element-desktop.desktop"
+        "org.gnome.Nautilus.desktop"
+        "localsend.desktop"
+      ];
+    };
   };
 }
