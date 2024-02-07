@@ -21,15 +21,15 @@
 
     nixosConfigurations.nixtop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ ./configuration.nix ./scripts/systems/nixtop.nix ./grub.nix inputs.home-manager.nixosModules.home-manager ];
+      modules = [ ./configuration.nix ./scripts/systems/nixtop.nix ./scripts/gui.nix ./grub.nix inputs.home-manager.nixosModules.home-manager ];
     };
       nixosConfigurations.nixie = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ ./configuration.nix ./scripts/systems/nixie.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
+      modules = [ ./configuration.nix ./scripts/systems/nixie.nix ./scripts/gui.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
     };
       nixosConfigurations.nix-vm = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ ./configuration.nix ./scripts/systems/nix-vm.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
+      modules = [ ./configuration.nix ./scripts/systems/nix-vm.nix ./scripts/gui.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
     };
       nixosConfigurations.rivendell = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
