@@ -25,7 +25,7 @@
       lolcat
       cowsay
       fortune
-      bsd-games
+      bsdgames
       haskellPackages.hackertyper
 
       #Yubikey
