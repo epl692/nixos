@@ -6,7 +6,7 @@
       threema-desktop
       localsend
       element-desktop
-
+      appflowy
       gnome.adwaita-icon-theme
 
       # System Utilies
