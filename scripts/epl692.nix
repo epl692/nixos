@@ -25,7 +25,9 @@
       lolcat
       cowsay
       fortune
-      
+      bsd-games
+      haskellPackages.hackertyper
+
       #Yubikey
       yubikey-agent
       yubikey-manager
