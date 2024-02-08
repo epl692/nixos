@@ -37,6 +37,8 @@
   systemd.targets.hibernate.enable = false;
   systemd.targets.hybrid-sleep.enable = false;
 
+  boot.binfmt.emulatedSystems = [ "x86_64-windows" "aarch64-linux" "armv6l-linux" "armv7l-linux"];
+
   programs.neovim = {
     enable = true;
     viAlias = true;
