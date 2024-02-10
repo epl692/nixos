@@ -36,11 +36,9 @@
       system = "x86_64-linux";
       modules = [ ./configuration.nix ./scripts/systems/flowy.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
     };
-
-
       nixosConfigurations.rivendell = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ ./configuration.nix ./scripts/systems/rivendell.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
+      modules = [ ./configuration.nix ./scripts/systems/rivendell.nix ./scripts/gui.nix ./efi.nix inputs.home-manager.nixosModules.home-manager ];
     };
   };
 }
