@@ -8,6 +8,7 @@
       htop
       neofetch
       bc
+      appimage-run
 
       #Stuff
       x3270
