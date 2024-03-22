@@ -9,6 +9,7 @@
       neofetch
       bc
       appimage-run
+      borgbackup
 
       #Stuff
       x3270
