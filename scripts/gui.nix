@@ -7,6 +7,7 @@
       localsend
       element-desktop
       gnome.adwaita-icon-theme
+      pika-backup
       ];
 
   networking.firewall.checkReversePath = "loose"; 
