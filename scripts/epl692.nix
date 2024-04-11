@@ -10,7 +10,8 @@
       bc
       appimage-run
       borgbackup
-
+      distrobox
+      
       #Stuff
       x3270
 
