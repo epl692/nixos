@@ -11,9 +11,14 @@
       appimage-run
       borgbackup
       distrobox
-      
+
       #Stuff
       x3270
+      wineWowPackages.full
+
+      #Ham
+      direwolf
+      gnuradio
 
       #Funny
       toilet

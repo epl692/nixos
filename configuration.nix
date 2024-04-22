@@ -45,7 +45,7 @@
   users.users.gandalf = {
     isNormalUser = true;
     description = "Eric Lynema";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "audio" "tty" "dialout" ];
     packages = with pkgs; [
 #      kate
     #  thunderbird
