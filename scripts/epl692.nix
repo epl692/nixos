@@ -15,6 +15,7 @@
       #Stuff
       x3270
       wineWowPackages.full
+      winetricks
 
       #Ham
       direwolf
