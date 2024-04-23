@@ -16,6 +16,7 @@
       x3270
       wineWowPackages.full
       winetricks
+      lutris
 
       #Ham
       direwolf
@@ -34,6 +35,7 @@
       yubikey-personalization
       ];
 
+  nixpkgs.config.allowUnfree = true; 
   virtualisation.docker.enable = true;
   networking.firewall.checkReversePath = "loose"; 
   networking.firewall.allowedTCPPorts = [ 53317 ];
