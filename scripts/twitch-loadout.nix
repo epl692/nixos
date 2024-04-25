@@ -6,6 +6,6 @@
       obs-studio
       obs-studio-plugins.droidcam-obs
       obs-studio-plugins.obs-ndi
-
+      obs-studio-plugins.obs-teleport
       ];
   }
