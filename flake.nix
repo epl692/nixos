@@ -21,7 +21,7 @@
 
     nixosConfigurations.nixtop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [ ./configuration.nix ./scripts/systems/nixtop.nix ./scripts/gui.nix ./scripts/twitch-loadout.nix ./grub.nix inputs.home-manager.nixosModules.home-manager ];
+      modules = [ ./configuration.nix ./scripts/systems/nixtop.nix ./scripts/gui.nix ./scripts/steam.nix ./grub.nix inputs.home-manager.nixosModules.home-manager ];
     };
       nixosConfigurations.nixie = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
