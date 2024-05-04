@@ -40,7 +40,7 @@
       yubikey-personalization
 
       #Custom
-      (import ../pkgs/test/test.nix)
+      #(import ../pkgs/hole-calc.nix)
 
       ];
   
