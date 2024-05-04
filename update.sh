@@ -1,4 +1,5 @@
 #!/run/current-system/sw/bin/bash
+git pull
 echo "Configuration..."
 sudo cp ./configuration.nix /etc/nixos/configuration.nix
 if test -d /etc/nixos/scripts; then
