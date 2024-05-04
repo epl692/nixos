@@ -38,6 +38,10 @@
       yubikey-agent
       yubikey-manager
       yubikey-personalization
+
+      #Custom
+      (import ./pkgs/test/test.nix)
+
       ];
   
   programs.steam.enable = true;
