@@ -137,11 +137,14 @@
       };
     "org/gnome/shell" = {
       favorite-apps = [
+        "org.gnome.Nautilus.desktop"
         "brave-browser.desktop"
         "org.gnome.Console.desktop"
         "element-desktop.desktop"
-        "org.gnome.Nautilus.desktop"
+        "discord.desktop"
         "localsend.desktop"
+        "steam.desktop"
+        "org.gnome.Calculator.desktop"
       ];
     };
   };

@@ -18,6 +18,10 @@
       winetricks
       lutris
 
+      #Social
+      toot
+      discord
+
       #Ham
       direwolf
       gnuradio
@@ -34,7 +38,8 @@
       yubikey-manager
       yubikey-personalization
       ];
-
+  
+  programs.steam.enable = true;
   nixpkgs.config.allowUnfree = true; 
   virtualisation.docker.enable = true;
   networking.firewall.checkReversePath = "loose"; 
@@ -87,5 +92,7 @@ boot.binfmt.registrations.appimage = {
    dates = "daily";
    options = "--delete-older-than 7d";
   };
+
+
 
 }
