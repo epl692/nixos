@@ -139,12 +139,13 @@
       favorite-apps = [
         "org.gnome.Nautilus.desktop"
         "brave-browser.desktop"
+        "warp-terminal.desktop"
         "org.gnome.Console.desktop"
         "element-desktop.desktop"
         "discord.desktop"
-        "localsend.desktop"
         "steam.desktop"
         "org.gnome.Calculator.desktop"
+        "localsend.desktop"
       ];
     };
   };

@@ -11,6 +11,7 @@
       appimage-run
       borgbackup
       distrobox
+      warp-terminal
 
       #Stuff
       x3270
