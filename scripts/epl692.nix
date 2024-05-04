@@ -10,8 +10,8 @@
       bc
       appimage-run
       borgbackup
-      distrobox
       warp-terminal
+      distrobox
 
       #Stuff
       x3270
