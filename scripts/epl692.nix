@@ -54,7 +54,7 @@
       yubikey-personalization
 
       #Custom
-      holeCalc
+      #holeCalc
       
       ];
   
