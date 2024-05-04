@@ -7,7 +7,7 @@
     rev = "master";
   };
 
-  holeCalc = pkgs.buildPackage {
+  hole-calc = pkgs.buildPackage {
     name = "hole-calc";
     src = holeCalcSrc;
   };
@@ -54,7 +54,7 @@
       yubikey-personalization
 
       #Custom
-      #holeCalc
+      hole-calc
       
       ];
   
