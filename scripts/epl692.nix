@@ -7,10 +7,11 @@
     rev = "master";
   };
 
-  hole-calc = pkgs.buildPackage {
+  hole-calc = pkgs.buildPackages {
     name = "hole-calc";
     src = holeCalcSrc;
   };
+
   in
 
   {
