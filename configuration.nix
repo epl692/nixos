@@ -9,7 +9,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./scripts/epl692.nix
-      ./pkgs/hole-calc.nix
     ];
 
 
