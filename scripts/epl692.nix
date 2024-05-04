@@ -42,6 +42,7 @@
   
   programs.steam.enable = true;
   nixpkgs.config.allowUnfree = true; 
+  nixpkgs.config.allowUnsupportedSystem = true;
   virtualisation.docker.enable = true;
   networking.firewall.checkReversePath = "loose"; 
   networking.firewall.allowedTCPPorts = [ 53317 ];
