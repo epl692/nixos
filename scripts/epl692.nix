@@ -40,7 +40,6 @@
       yubikey-personalization
 
       #Custom
-      #(import ../pkgs/hole-calc.nix)
 
       ];
   
