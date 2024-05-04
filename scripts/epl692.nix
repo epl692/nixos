@@ -10,7 +10,7 @@
       bc
       appimage-run
       borgbackup
-      warp-beta.warp-terminal
+      warp-terminal
       distrobox
 
       #Stuff
@@ -94,14 +94,5 @@ boot.binfmt.registrations.appimage = {
    dates = "daily";
    options = "--delete-older-than 7d";
   };
-
-
-    packageOverrides = pkgs: {
-        warp-beta = import (fetchTarball "https://github.com/imadnyc/nixpkgs/archive/refs/heads/warp-terminal-initial-linux.zip") {
-            config = config.nixpkgs.config;  
-        };        
-    };
-
-
 
 }
