@@ -57,7 +57,10 @@
   systemd.targets.suspend.enable = false;
   systemd.targets.hibernate.enable = false;
   systemd.targets.hybrid-sleep.enable = false;
-
+  
+  #Download some more ram.
+  zramSwap.enable = true;
+  
   boot.binfmt.emulatedSystems = [ "x86_64-windows" "aarch64-linux" "armv6l-linux" "armv7l-linux"];
 
 boot.binfmt.registrations.appimage = {
