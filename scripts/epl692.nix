@@ -1,19 +1,4 @@
   { config, pkgs, lib, ... }:
-  
-  let
-  githubRepo = "github:epl692/hole-calc";
-  holeCalcSrc = pkgs.fetchGit {
-    url = githubRepo;
-    rev = "master";
-  };
-
-  hole-calc = pkgs.buildPackages {
-    name = "hole-calc";
-    src = holeCalcSrc;
-  };
-
-  in
-
   {
     environment.systemPackages = with pkgs; [
       # System Utilies
@@ -55,7 +40,6 @@
       yubikey-personalization
 
       #Custom
-      hole-calc
       
       ];
   
