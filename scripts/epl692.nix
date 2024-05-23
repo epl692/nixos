@@ -18,6 +18,7 @@
       wineWowPackages.full
       winetricks
       lutris
+      ollama
 
       #Social
       toot
@@ -38,6 +39,9 @@
       yubikey-agent
       yubikey-manager
       yubikey-personalization
+
+      #3d Printing
+      freecad
 
       #Custom
       
