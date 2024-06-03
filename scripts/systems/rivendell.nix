@@ -10,6 +10,7 @@ systemd.services.ollama = {
   enable = true;
   environment = {
     OLLAMA_HOST="0.0.0.0:11434";
+    HOEM="/home/gandalf/";
   };
   serviceConfig = {
      ExecStart = "${pkgs.ollama}/bin/ollama serve";
