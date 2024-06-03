@@ -11,6 +11,6 @@ systemd.services.ollama = {
   serviceConfig = {
      ExecStart = "OLLAMA_HOST=0.0.0.0:11434 ${pkgs.ollama}/bin/ollama serve";
    }
-}
+};
 
 }
