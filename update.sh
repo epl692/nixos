@@ -30,5 +30,6 @@ sudo cp ./efi.nix /etc/nixos/
 sudo cp ./grub.nix /etc/nixos/
 
 if test -f ./armed.flag; then
+  sudo nix flake update /etc/nixos/
   sudo nixos-rebuild switch --flake /etc/nixos/
 fi
