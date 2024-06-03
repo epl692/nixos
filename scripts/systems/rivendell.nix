@@ -13,6 +13,6 @@
       OLLAMA_HOST=0.0.0.0:11434 ollama serve
     '';
     wantedBy = [ "multi-user.target" ]; # starts after login
-  }
+  };
 
 }
